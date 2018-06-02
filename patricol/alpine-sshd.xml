@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>alpine-sshd</Name>
+  <Repository>patricol/alpine-sshd:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>true</Privileged>
+  <Support>https://github.com/Patricol/docker-templates/issues</Support>
+  <Project>https://hub.docker.com/r/patricol/alpine-sshd/</Project>
+  <Overview>Alpine OpenSSH server with easy user creation.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-sshd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/alpine-sshd.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Alpine OpenSSH server with easy user creation.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>22</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sshd/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/ssh_data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="ssh_port" Target="22" Default="22" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="false" Mask="false">22</Config>
+  <Config Name="appdata" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/sshd/</Config>
+  <Config Name="data" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/ssh_data/</Config>
+</Container>
