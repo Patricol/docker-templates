@@ -44,7 +44,4 @@
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="ssh_port2" Target="22" Default="22" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true" Mask="false">22</Config>
-  <Config Name="appdata2" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sshd/</Config>
-  <Config Name="dat2a" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/ssh_data/</Config>
 </Container>
