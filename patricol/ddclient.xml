@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>ddclient</Name>
+  <Repository>linuxserver/ddclient:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-ddclient/issues</Support>
+  <Project>https://hub.docker.com/r/linuxserver/ddclient/</Project>
+  <Overview>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/ddclient.xml</TemplateURL>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ddclient/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>America/New_York</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>
