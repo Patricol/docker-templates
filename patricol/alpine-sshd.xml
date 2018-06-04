@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>alpine-sshd</Name>
+  <Name>sshd_server</Name>
+  <Beta>False</Beta>
   <Repository>patricol/alpine-sshd:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/patricol/alpine-sshd/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>true</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://hub.docker.com/r/patricol/alpine-sshd/</Project>
   <Overview>Alpine OpenSSH server with easy user creation.</Overview>
-  <Category>Tools: Network:Other</Category>
+  <Category></Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-sshd.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/alpine-sshd.png</Icon>
@@ -38,7 +39,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/ssh_data/</HostDir>
+      <HostDir>/mnt/user/data_to_mount/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
