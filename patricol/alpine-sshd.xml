@@ -6,7 +6,7 @@
   <Registry>https://hub.docker.com/r/patricol/alpine-sshd/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Privileged>true</Privileged>
+  <Privileged>False</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://hub.docker.com/r/patricol/alpine-sshd/</Project>
   <Overview>Alpine OpenSSH server with easy user creation.</Overview>
