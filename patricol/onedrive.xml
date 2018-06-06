@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>onedrive</Name>
+  <Beta>False</Beta>
+  <Repository>patricol/onedrive:latest</Repository>
+  <Registry>https://hub.docker.com/r/patricol/onedrive/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>False</Privileged>
+  <Support>https://github.com/Patricol/docker-templates/issues</Support>
+  <Project>https://hub.docker.com/r/patricol/onedrive/</Project>
+  <Overview>ADD OVERVIEW HERE</Overview>
+  <Category></Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/onedrive.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/onedrive.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>ADD DESCRIPTION HERE</Description>
+  <Networking/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onedrive/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/onedrive/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Name>URI_RESPONSE</Name>
+      <Value>See README. (Or just run this; an error message will explain.)</Value>
+    </Variable>
+  </Environment>
+</Container>
