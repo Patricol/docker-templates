@@ -14,7 +14,7 @@
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/onedrive.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/onedrive.png</Icon>
-  <ExtraParams></ExtraParams>
+  <ExtraParams>--restart on-failure</ExtraParams>
   <PostArgs/>
   <DateInstalled></DateInstalled>
   <DonateText/>
