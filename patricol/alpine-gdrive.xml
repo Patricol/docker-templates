@@ -21,7 +21,7 @@
   <DonateLink/>
   <DonateImg/>
   <MinVer/>
-  <Description>ADD HERE</Description>
+  <Description>Verification code is the response from: https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/drive&response_type=code&access_type=offline&approval_prompt=force</Description>
   <Networking/>
   <Data>
     <Volume>
@@ -46,7 +46,7 @@
     </Variable>
     <Variable>
       <Name>VERIFICATION_CODE</Name>
-      <Value>Response from: https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/drive&response_type=code&access_type=offline&approval_prompt=force</Value>
+      <Value>See description</Value>
     </Variable>
     <Variable>
       <Name>MOUNT_OPTS</Name>
