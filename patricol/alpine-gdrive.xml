@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>gdrive</Name>
+  <Beta>False</Beta>
+  <Repository>patricol/alpine-gdrive:latest</Repository>
+  <Registry>https://hub.docker.com/r/patricol/alpine-gdrive/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>False</Privileged>
+  <Support>https://github.com/Patricol/docker-templates/issues</Support>
+  <Project>https://hub.docker.com/r/patricol/alpine-gdrive/</Project>
+  <Overview>ADD HERE</Overview>
+  <Category></Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-gdrive.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/alpine-gdrive.png</Icon>
+  <ExtraParams>--security-opt apparmor:unconfined --cap-add mknod --cap-add SYS_ADMIN --device /dev/fuse</ExtraParams>
+  <PostArgs/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>ADD HERE</Description>
+  <Networking/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gdrive/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/gdrive/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Name>CLIENT_ID</Name>
+      <Value>Get here: https://console.cloud.google.com/apis/credentials (without .apps.googleusercontent.com ending)</Value>
+    </Variable>
+    <Variable>
+      <Name>CLIENT_SECRET</Name>
+      <Value>Get here: https://console.cloud.google.com/apis/credentials</Value>
+    </Variable>
+    <Variable>
+      <Name>VERIFICATION_CODE</Name>
+      <Value>Response from: https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/drive&response_type=code&access_type=offline&approval_prompt=force</Value>
+    </Variable>
+    <Variable>
+      <Name>MOUNT_OPTS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+</Container>
