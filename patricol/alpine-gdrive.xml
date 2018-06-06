@@ -21,7 +21,7 @@
   <DonateLink/>
   <DonateImg/>
   <MinVer/>
-  <Description></Description>
+  <Description>See readme: https://github.com/Patricol/dockerfiles/tree/master/alpine/gdrive</Description>
   <Networking/>
   <Data>
     <Volume>
@@ -30,9 +30,9 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/gdrive/</HostDir>
+      <HostDir>/mnt/gdrive/</HostDir>
       <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
+      <Mode>rw/shared</Mode>
     </Volume>
   </Data>
   <Environment>
