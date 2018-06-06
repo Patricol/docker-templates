@@ -38,7 +38,7 @@
   <Environment>
     <Variable>
       <Name>URI_RESPONSE</Name>
-      <Value>See README. (Or just run this; an error message will explain.)</Value>
+      <Value></Value>
     </Variable>
   </Environment>
 </Container>
