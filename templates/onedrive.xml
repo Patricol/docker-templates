@@ -12,8 +12,8 @@
   <Overview>ADD OVERVIEW HERE</Overview>
   <Category></Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/onedrive.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/onedrive.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/onedrive.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/onedrive.png</Icon>
   <ExtraParams></ExtraParams>
   <PostArgs/>
   <DateInstalled></DateInstalled>

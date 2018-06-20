@@ -12,8 +12,8 @@
   <Overview>Alpine OpenSSH server with easy user creation.</Overview>
   <Category></Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-sshd.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/img/alpine-sshd.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/alpine-sshd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/alpine-sshd.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled></DateInstalled>

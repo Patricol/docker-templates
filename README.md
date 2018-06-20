@@ -5,3 +5,8 @@
 # onedrive
 --restart on-failure is to cause the container to restart if the sync times out due to poor network connectivity.
 Disabling now though, as failures are being hidden by it.
+
+If beta is respected, use that for personal ones.
+
+
+Some templates come with matching database templates; required by the main container.

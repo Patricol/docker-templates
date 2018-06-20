@@ -11,7 +11,7 @@
   <Overview>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.</Overview>
   <Category>Tools: Network:Other</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/ddclient.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/ddclient.xml</TemplateURL>
   <Icon></Icon>
   <ExtraParams/>
   <PostArgs/>
