@@ -9,7 +9,7 @@
   <Privileged>False</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://hub.docker.com/r/jaymoulin/google-musicmanager/</Project>
-  <Overview>This image allows you to download and upload your Google Music Library to/from a selected folder. SSH into the container and run "auth" to setup.</Overview>
+  <Overview>This image allows you to download and upload your Google Music Library to/from a selected folder. SSH into the container and run "auth" to setup, then restart the container.</Overview>
   <Category></Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/google-musicmanager.xml</TemplateURL>
@@ -21,7 +21,7 @@
   <DonateLink/>
   <DonateImg/>
   <MinVer/>
-  <Description>This image allows you to download and upload your Google Music Library to/from a selected folder. SSH into the container and run "auth" to setup.</Description>
+  <Description>This image allows you to download and upload your Google Music Library to/from a selected folder. SSH into the container and run "auth" to setup, then restart the container.</Description>
   <Networking/>
   <Data>
     <Volume>
