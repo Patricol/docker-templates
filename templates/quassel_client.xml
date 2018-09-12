@@ -23,7 +23,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>5900</HostPort>
+        <HostPort/>
         <ContainerPort>5900</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -45,6 +45,6 @@
   </Environment>
   <Labels/>
   <Config Name="PASSWORD" Target="PASSWORD" Default="8CharMax" Mode="" Description="Password used for VNC; 8 character maximum." Type="Variable" Display="always-hide" Required="true" Mask="false">8CharMax</Config>
-  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false">5900</Config>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quassel_client/</Config>
 </Container>
