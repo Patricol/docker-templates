@@ -12,7 +12,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/quassel_client.xml</TemplateURL>
-  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/QuasselIrc.svg/240px-QuasselIrc.svg.png</Icon>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/quassel_client.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>

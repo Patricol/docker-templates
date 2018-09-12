@@ -12,7 +12,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/filezilla.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/filezilla-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/filezilla.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>

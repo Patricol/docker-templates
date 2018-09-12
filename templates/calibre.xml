@@ -12,7 +12,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/calibre.xml</TemplateURL>
-  <Icon>http://calibre-ebook.com/favicon.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/calibre.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>
