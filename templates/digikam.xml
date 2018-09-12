@@ -12,10 +12,10 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/digikam.xml</TemplateURL>
-  <Icon>http://www.h-online.com/imgs/43/6/9/3/5/4/7/Digikam-logo200-22eb510f46d16449.png</Icon>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/digikam.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1536706152</DateInstalled>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -50,7 +50,7 @@
   </Environment>
   <Labels/>
   <Config Name="PASSWORD" Target="PASSWORD" Default="8CharMax" Mode="" Description="Password used for VNC; 8 character maximum." Type="Variable" Display="always-hide" Required="true" Mask="false">8CharMax</Config>
-  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false">5900</Config>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/digikam/</Config>
   <Config Name="Media" Target="/data" Default="" Mode="rw" Description="Photos/Videos etc. Must be a parent of every directory you intend to add the the library." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
 </Container>
