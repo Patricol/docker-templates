@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>digikam</Name>
-  <Repository>patricol/digikam:18.04</Repository>
+  <Repository>patricol/digikam</Repository>
   <Registry>https://hub.docker.com/r/patricol/digikam/</Registry>
   <Network>bridge</Network>
   <MyIP/>
