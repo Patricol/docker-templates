@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>filezilla</Name>
+  <Repository>patricol/filezilla</Repository>
+  <Registry>https://hub.docker.com/r/patricol/filezilla/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Patricol/docker-templates/issues</Support>
+  <Project>https://filezilla-project.org/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/filezilla.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/filezilla-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1536730552</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5900</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/local_files</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filezilla</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>8CharMax</Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Local Files" Target="/local_files" Default="" Mode="rw" Description="Files on the host that FileZilla should be able to access." Type="Path" Display="always-hide" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/filezilla</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="8CharMax" Mode="" Description="Password used for VNC; 8 character maximum." Type="Variable" Display="always-hide" Required="true" Mask="false">8CharMax</Config>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Container Port: 5900" Type="Port" Display="always-hide" Required="false" Mask="false">5900</Config>
+</Container>
