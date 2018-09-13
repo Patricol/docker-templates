@@ -45,5 +45,5 @@
   <Labels/>
   <Config Name="Port 6767" Target="6767" Default="" Mode="tcp" Description="Port 6767" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Bazarr Files" Target="/bazarr/data" Default="" Mode="rw" Description="Container Path: /bazarr/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bazarr/</Config>
-  <Config Name="Media" Target="/tv" Default="" Mode="rw" Description="Media" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Media" Target="/tv" Default="" Mode="rw" Description="Container Path: /tv" Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
