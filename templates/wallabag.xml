@@ -5,32 +5,101 @@
   <Registry>https://hub.docker.com/r/wallabag/wallabag/</Registry>
   <Network>bridge</Network>
   <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://github.com/wallabag/wallabag/</Project>
-  <Overview/>
+  <Overview>Wallabag for use with a PostgreSQL database.</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/wallabag.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/wallabag.png</Icon>
   <ExtraParams/>
   <PostArgs/>
+  <CPUset/>
   <DateInstalled/>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>Wallabag for use with a PostgreSQL database.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort/>
+        <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
   <Data/>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>wallabag_admin</Value>
+      <Name>POSTGRES_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>POSTGRES_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>wallabag_postgres</Value>
+      <Name>SYMFONY__ENV__DATABASE_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5432</Value>
+      <Name>SYMFONY__ENV__DATABASE_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>wallabag</Value>
+      <Name>SYMFONY__ENV__DATABASE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>wallabag</Value>
+      <Name>SYMFONY__ENV__DATABASE_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>wallapass</Value>
+      <Name>SYMFONY__ENV__DATABASE_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://wallabag.domain.com/</Value>
+      <Name>SYMFONY__ENV__DOMAIN_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>SYMFONY__ENV__FOSUSER_REGISTRATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>pdo_pgsql</Value>
+      <Name>SYMFONY__ENV__DATABASE_DRIVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Wallabag\CoreBundle\Doctrine\DBAL\Driver\CustomPostgreSQLDriver</Value>
+      <Name>SYMFONY__ENV__DATABASE_DRIVER_CLASS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
-  <Config Name="Web UI Port" Target="80" Default="" Mode="tcp" Description="Port used for viewing Wallabag." Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI Port" Target="80" Default="" Mode="tcp" Description="Port used for viewing Wallabag." Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="" Mode="" Description="Container Variable: POSTGRES_USER" Type="Variable" Display="always" Required="true" Mask="false">wallabag_admin</Config>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="Container Variable: POSTGRES_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SYMFONY__ENV__DATABASE_HOST" Target="SYMFONY__ENV__DATABASE_HOST" Default="" Mode="" Description="postgres database hostname" Type="Variable" Display="always" Required="true" Mask="false">wallabag_postgres</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_PORT" Target="SYMFONY__ENV__DATABASE_PORT" Default="" Mode="" Description="postgres database port" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_NAME" Target="SYMFONY__ENV__DATABASE_NAME" Default="" Mode="" Description="Container Variable: SYMFONY__ENV__DATABASE_NAME" Type="Variable" Display="always" Required="true" Mask="false">wallabag</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_USER" Target="SYMFONY__ENV__DATABASE_USER" Default="" Mode="" Description="Container Variable: SYMFONY__ENV__DATABASE_USER" Type="Variable" Display="always" Required="true" Mask="false">wallabag</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_PASSWORD" Target="SYMFONY__ENV__DATABASE_PASSWORD" Default="" Mode="" Description="Container Variable: SYMFONY__ENV__DATABASE_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">wallapass</Config>
+  <Config Name="SYMFONY__ENV__DOMAIN_NAME" Target="SYMFONY__ENV__DOMAIN_NAME" Default="" Mode="" Description="Container Variable: SYMFONY__ENV__DOMAIN_NAME" Type="Variable" Display="always" Required="false" Mask="false">https://wallabag.domain.com/</Config>
+  <Config Name="SYMFONY__ENV__FOSUSER_REGISTRATION" Target="SYMFONY__ENV__FOSUSER_REGISTRATION" Default="false" Mode="" Description="Container Variable: SYMFONY__ENV__FOSUSER_REGISTRATION" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_DRIVER" Target="SYMFONY__ENV__DATABASE_DRIVER" Default="pdo_pgsql" Mode="" Description="Container Variable: SYMFONY__ENV__DATABASE_DRIVER" Type="Variable" Display="advanced-hide" Required="true" Mask="false">pdo_pgsql</Config>
+  <Config Name="SYMFONY__ENV__DATABASE_DRIVER_CLASS" Target="SYMFONY__ENV__DATABASE_DRIVER_CLASS" Default="Wallabag\CoreBundle\Doctrine\DBAL\Driver\CustomPostgreSQLDriver" Mode="" Description="Container Variable: SYMFONY__ENV__DATABASE_DRIVER_CLASS" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Wallabag\CoreBundle\Doctrine\DBAL\Driver\CustomPostgreSQLDriver</Config>
 </Container>
