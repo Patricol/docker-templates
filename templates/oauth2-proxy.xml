@@ -12,7 +12,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/oauth2-proxy.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/OAuth2-Proxy.png</Icon>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/oauth2-proxy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>
