@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>oauth2-proxy</Name>
-  <Repository>patricol/oauth2-proxy</Repository>
+  <Repository>patricol/oauth2-proxy:latest</Repository>
   <Registry>https://hub.docker.com/r/patricol/oauth2-proxy</Registry>
   <Network>bridge</Network>
   <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://hub.docker.com/r/patricol/oauth2-proxy</Project>
@@ -15,6 +16,7 @@
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/oauth2-proxy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
+  <CPUset/>
   <DateInstalled/>
   <DonateText/>
   <DonateLink/>
@@ -31,13 +33,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/oauth2_proxy/</HostDir>
+      <HostDir>/mnt/user/appdata/oauth2-proxy/</HostDir>
       <ContainerDir>/config/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Host Path 1" Target="/config/" Default="" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_proxy/</Config>
+  <Config Name="Host Path 1" Target="/config/" Default="" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2-proxy/</Config>
   <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="false" Mask="false"/>
 </Container>

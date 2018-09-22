@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
-<Container>
+<Container version="2">
   <Name>ddclient</Name>
   <Repository>linuxserver/ddclient:latest</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/linuxserver/docker-ddclient/issues</Support>
   <Project>https://hub.docker.com/r/linuxserver/ddclient/</Project>
   <Overview>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.</Overview>
-  <Category>Tools: Network:Other</Category>
+  <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/ddclient.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/ddclient.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled></DateInstalled>
+  <CPUset/>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
-  <DonateImg/>
-  <MinVer/>
-  <Description>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Description>
+  <Description>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/ddclient/</HostDir>
+      <HostDir>/mnt/user/appdata/ddclient</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -43,10 +43,9 @@
       <Name>PGID</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>America/New_York</Value>
-      <Name>TZ</Name>
-      <Mode/>
-    </Variable>
   </Environment>
+  <Labels/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/ddclient" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ddclient</Config>
 </Container>
