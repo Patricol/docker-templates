@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>guacd</Name>
+  <Repository>guacamole/guacd</Repository>
+  <Registry>https://hub.docker.com/r/guacamole/guacd/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Patricol/docker-templates/issues</Support>
+  <Project>https://hub.docker.com/r/guacamole/guacd/</Project>
+  <Overview>Provides the guacd daemon, built from the released guacamole-server source with support for VNC, RDP, SSH, and telnet.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/guacd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/guacd.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Provides the guacd daemon, built from the released guacamole-server source with support for VNC, RDP, SSH, and telnet.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+</Container>
