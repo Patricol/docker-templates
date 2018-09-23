@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>ddclient</Name>
   <Repository>linuxserver/ddclient:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/linuxserver/ddclient/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -12,8 +12,8 @@
   <Overview>DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.</Overview>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/ddclient.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/ddclient.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/ddclient.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/ddclient.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -45,7 +45,7 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/ddclient" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ddclient</Config>
 </Container>
