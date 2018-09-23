@@ -23,7 +23,13 @@
   <Description>PostgreSQL is a powerful, open source object-relational database system. Based on official Postgres Docker image.</Description>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>5432</HostPort>
+        <ContainerPort>5432</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
@@ -54,4 +60,5 @@
   <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="" Mode="" Description="Container Variable: POSTGRES_USER" Type="Variable" Display="always" Required="true" Mask="false">postgres_user</Config>
   <Config Name="POSTGRES_DB" Target="POSTGRES_DB" Default="" Mode="" Description="Container Variable: POSTGRES_DB" Type="Variable" Display="always" Required="true" Mask="false">postgres_db</Config>
   <Config Name="Database Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/databases/postgres" Mode="rw" Description="This is where Postgres will store its data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/databases/postgres</Config>
+  <Config Name="Postgres Port" Target="5432" Default="" Mode="tcp" Description="Container Port: 5432" Type="Port" Display="always-hide" Required="false" Mask="false">5432</Config>
 </Container>
