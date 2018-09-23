@@ -11,8 +11,8 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/filezilla.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/filezilla.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/filezilla.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/filezilla.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>

@@ -11,8 +11,8 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/bazarr.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/bazarr.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/bazarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/bazarr.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>

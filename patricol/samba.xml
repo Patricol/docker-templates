@@ -12,7 +12,7 @@
   <Overview>Alpine Samba server with easy user creation.</Overview>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/templates/samba.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/samba.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/samba.png</Icon>
   <ExtraParams/>
   <PostArgs/>
