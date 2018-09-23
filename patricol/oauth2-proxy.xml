@@ -12,8 +12,8 @@
   <Overview>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.</Overview>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/oauth2-proxy.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/oauth2-proxy.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/oauth2-proxy.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/oauth2-proxy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

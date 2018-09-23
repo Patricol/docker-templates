@@ -12,8 +12,8 @@
   <Overview>ADD HERE</Overview>
   <Category></Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/templates/alpine-gdrive.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/images/alpine-gdrive.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-gdrive.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/alpine-gdrive.png</Icon>
   <ExtraParams>--security-opt apparmor:unconfined --cap-add mknod --cap-add SYS_ADMIN --device /dev/fuse</ExtraParams>
   <PostArgs/>
   <DateInstalled></DateInstalled>
