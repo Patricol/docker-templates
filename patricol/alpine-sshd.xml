@@ -1,26 +1,25 @@
 <?xml version="1.0"?>
-<Container>
-  <Name>sshd_server</Name>
-  <Beta>False</Beta>
+<Container version="2">
+  <Name>sshd</Name>
   <Repository>patricol/alpine-sshd:latest</Repository>
   <Registry>https://hub.docker.com/r/patricol/alpine-sshd/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Privileged>False</Privileged>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
   <Project>https://hub.docker.com/r/patricol/alpine-sshd/</Project>
   <Overview>Alpine OpenSSH server with easy user creation.</Overview>
-  <Category></Category>
+  <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/alpine-sshd.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/alpine-sshd.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled></DateInstalled>
+  <CPUset/>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
-  <DonateImg/>
-  <MinVer/>
   <Description>Alpine OpenSSH server with easy user creation.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -34,15 +33,19 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/user/appdata/sshd/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/data_to_mount/</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment/>
+  <Labels/>
+  <Config Name="SSH Port" Target="22" Default="22" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true" Mask="false">22</Config>
+  <Config Name="Mounted Data" Target="/data" Default="/mnt/user/data_to_mount/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/sshd_server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/sshd/</Config>
 </Container>
