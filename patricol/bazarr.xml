@@ -46,10 +46,23 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="Port 6767" Target="6767" Default="" Mode="tcp" Description="Port 6767" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bazarr/</Config>
   <Config Name="Media" Target="/tv" Default="" Mode="rw" Description="Container Path: /tv" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Media" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
