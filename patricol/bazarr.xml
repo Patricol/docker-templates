@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>bazarr</Name>
-  <Repository>morpheus65535/bazarr:amd64-latest</Repository>
-  <Registry>https://hub.docker.com/r/morpheus65535/bazarr/</Registry>
+  <Repository>linuxserver/bazarr:amd64-latest</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/bazarr/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
-  <Project>https://hub.docker.com/r/morpheus65535/bazarr/</Project>
+  <Project>https://hub.docker.com/r/linuxserver/bazarr/</Project>
   <Overview/>
   <Category/>
   <WebUI/>
@@ -32,7 +32,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/bazarr/</HostDir>
-      <ContainerDir>/bazarr/data</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -40,10 +40,29 @@
       <ContainerDir>/tv</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="Port 6767" Target="6767" Default="" Mode="tcp" Description="Port 6767" Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="Bazarr Files" Target="/bazarr/data" Default="" Mode="rw" Description="Container Path: /bazarr/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bazarr/</Config>
-  <Config Name="Media" Target="/tv" Default="" Mode="rw" Description="Container Path: /tv" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bazarr/</Config>
+  <Config Name="Media" Target="/tv" Default="" Mode="rw" Description="Container Path: /tv" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Media" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
