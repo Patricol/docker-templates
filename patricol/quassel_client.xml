@@ -24,7 +24,7 @@
     <Publish>
       <Port>
         <HostPort/>
-        <ContainerPort>5900</ContainerPort>
+        <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -38,13 +38,13 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>8CharMax</Value>
+      <Value>RDPPassword</Value>
       <Name>PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="8CharMax" Mode="" Description="Password used for VNC; 8 character maximum." Type="Variable" Display="always-hide" Required="true" Mask="false">8CharMax</Config>
-  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="RDPPassword" Mode="" Description="Password used for RDP." Type="Variable" Display="always-hide" Required="true" Mask="false">RDPPassword</Config>
+  <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Port used for connecting via RDP." Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quassel_client/</Config>
 </Container>
