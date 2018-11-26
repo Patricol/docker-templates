@@ -11,7 +11,7 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/remmina.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/remmina-vnc.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/remmina.png</Icon>
   <ExtraParams/>
   <PostArgs/>

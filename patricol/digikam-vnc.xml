@@ -11,7 +11,7 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/digikam.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/digikam-vnc.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/digikam.png</Icon>
   <ExtraParams/>
   <PostArgs/>
