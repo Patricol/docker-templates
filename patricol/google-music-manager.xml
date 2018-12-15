@@ -13,7 +13,7 @@
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/google-music-manager.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/google-music-manager.png</Icon>
-  <ExtraParams>--mac-address=""<ExtraParams/>
+  <ExtraParams>--mac-address=""</ExtraParams>
   <PostArgs/>
   <DateInstalled/>
   <DonateText/>
