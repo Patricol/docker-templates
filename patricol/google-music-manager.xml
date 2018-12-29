@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>google_music_manager</Name>
-  <Repository>patricol/ubuntu_google_music_manager</Repository>
-  <Registry>https://hub.docker.com/r/patricol/ubuntu_google_music_manager/</Registry>
+  <Repository>patricol/google-music-manager</Repository>
+  <Registry>https://hub.docker.com/r/patricol/google-music-manager/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
   <Support>https://github.com/Patricol/docker-templates/issues</Support>
-  <Project>https://hub.docker.com/r/patricol/ubuntu_google_music_manager/</Project>
+  <Project>https://hub.docker.com/r/patricol/google-music-manager/</Project>
   <Overview>BE SURE TO SET THE MAC ADDRESS IN EXTRA PARAMS!</Overview>
   <Category/>
   <WebUI/>
