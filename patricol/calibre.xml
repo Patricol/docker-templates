@@ -28,6 +28,11 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <HostPort/>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
         <HostPort>8081</HostPort>
         <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
@@ -48,15 +53,22 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>RDPPassword</Value>
+      <Value>Password</Value>
       <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>RDP</Value>
+      <Name>RDP_OR_VNC</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
   <Config Name="Calibre Library" Target="/library" Default="" Mode="rw" Description="Container Path: /library" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/calibre/</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="Password" Mode="" Description="Password used for RDP and VNC. VNC truncates to 8 characters." Type="Variable" Display="always-hide" Required="true" Mask="false">Password</Config>
+  <Config Name="RDP_OR_VNC" Target="RDP_OR_VNC" Default="RDP" Mode="" Description="Choose whether to use RDP or VNC." Type="Variable" Display="always-hide" Required="true" Mask="false">RDP</Config>
   <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Port used for connecting via RDP." Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="RDPPassword" Mode="" Description="Password used for RDP." Type="Variable" Display="always-hide" Required="true" Mask="false">RDPPassword</Config>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Calibre Server Port" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always-hide" Required="false" Mask="false">8081</Config>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/calibre</Config>
 </Container>

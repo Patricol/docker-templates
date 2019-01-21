@@ -27,6 +27,11 @@
         <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort/>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -43,14 +48,21 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>RDPPassword</Value>
+      <Value>Password</Value>
       <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>RDP</Value>
+      <Name>RDP_OR_VNC</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="RDPPassword" Mode="" Description="Password used for RDP." Type="Variable" Display="always-hide" Required="true" Mask="false">RDPPassword</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="Password" Mode="" Description="Password used for RDP and VNC. VNC truncates to 8 characters." Type="Variable" Display="always-hide" Required="true" Mask="false">Password</Config>
+  <Config Name="RDP_OR_VNC" Target="RDP_OR_VNC" Default="RDP" Mode="" Description="Choose whether to use RDP or VNC." Type="Variable" Display="always-hide" Required="true" Mask="false">RDP</Config>
   <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Port used for connecting via RDP." Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/digikam/</Config>
   <Config Name="Media" Target="/data" Default="" Mode="rw" Description="Photos/Videos etc. Must be a parent of every directory you intend to add the the library." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
 </Container>
