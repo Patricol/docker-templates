@@ -33,13 +33,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/oauth2_proxy/</HostDir>
+      <HostDir>/mnt/user/appdata/oauth2-proxy/</HostDir>
       <ContainerDir>/config/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Host Path 1" Target="/config/" Default="" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_proxy/</Config>
+  <Config Name="Host Path 1" Target="/config/" Default="" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2-proxy/</Config>
   <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="false" Mask="false"/>
 </Container>
