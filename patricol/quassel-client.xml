@@ -11,8 +11,8 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/quassel_client.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/quassel_client.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/quassel-client.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/patricol/docker-templates/master/patricol/images/quassel-client.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>
@@ -36,7 +36,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/quassel_client/</HostDir>
+      <HostDir>/mnt/user/appdata/quassel-client/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -58,5 +58,5 @@
   <Config Name="RDP_OR_VNC" Target="RDP_OR_VNC" Default="RDP" Mode="" Description="Choose whether to use RDP or VNC." Type="Variable" Display="always-hide" Required="true" Mask="false">RDP</Config>
   <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Port used for connecting via RDP." Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="VNC Port" Target="5900" Default="" Mode="tcp" Description="Port used for connecting via VNC." Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quassel_client/</Config>
+  <Config Name="Configuration Files" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quassel-client/</Config>
 </Container>
